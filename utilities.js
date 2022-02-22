@@ -58,6 +58,7 @@ function countIf (array, fn) {
 }
 
 function filterStringsWithCommas (str) {
+  return str.includes(',')
 }
 
 function splitStringByCommas (str) {
@@ -72,5 +73,6 @@ module.exports = {
   addStrings,
   addStringsOrNumbers,
   isEmail,
-  countIf
+  countIf,
+  filterStringsWithCommas
 }
