@@ -29,6 +29,11 @@ function addStrings (a, b) {
 }
 
 function addStringsOrNumbers (a, b) {
+  if (typeof a === "string" || typeof b === "string") {
+    return String(Number(a) + Number(b))
+  } else {
+    return a + b
+  }
 }
 
 function isEmail (str) {
@@ -49,5 +54,6 @@ module.exports = {
   toNumber,
   isStringNumber,
   add,
-  addStrings
+  addStrings,
+  addStringsOrNumbers
 }
