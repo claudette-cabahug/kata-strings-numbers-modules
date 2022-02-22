@@ -20,6 +20,7 @@ function isStringNumber (str) {
 }
 
 function add (a, b) {
+  return a + b
 }
 
 function addStrings (a, b) {
@@ -44,5 +45,6 @@ module.exports = {
   getType,
   isNumber,
   toNumber,
-  isStringNumber
+  isStringNumber,
+  add
 }
