@@ -62,6 +62,7 @@ function filterStringsWithCommas (str) {
 }
 
 function splitStringByCommas (str) {
+  return str.split(',')
 }
 
 module.exports = {
@@ -74,5 +75,6 @@ module.exports = {
   addStringsOrNumbers,
   isEmail,
   countIf,
-  filterStringsWithCommas
+  filterStringsWithCommas,
+  splitStringByCommas
 }
