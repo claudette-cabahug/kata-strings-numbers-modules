@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 function getType (thing) {
+  return typeof thing
 }
 
 function isNumber (thing) {
@@ -31,4 +32,8 @@ function filterStringsWithCommas (str) {
 }
 
 function splitStringByCommas (str) {
+}
+
+module.exports = {
+  getType
 }
