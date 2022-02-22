@@ -24,6 +24,8 @@ function add (a, b) {
 }
 
 function addStrings (a, b) {
+  let sum = Number(a) + Number(b)
+  return String(sum)
 }
 
 function addStringsOrNumbers (a, b) {
@@ -46,5 +48,6 @@ module.exports = {
   isNumber,
   toNumber,
   isStringNumber,
-  add
+  add,
+  addStrings
 }
