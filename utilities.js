@@ -36,7 +36,15 @@ function addStringsOrNumbers (a, b) {
   }
 }
 
+// function isEmail (str) {
+//   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//   return re.test(str);
+// }
+
 function isEmail (str) {
+  const atPosition = str.indexOf('@')
+  const dotPosition = str.lastIndexOf('.')
+  return atPosition > 0 && dotPosition > atPosition
 }
 
 function countIf (array, fn) {
@@ -55,5 +63,6 @@ module.exports = {
   isStringNumber,
   add,
   addStrings,
-  addStringsOrNumbers
+  addStringsOrNumbers,
+  isEmail
 }
