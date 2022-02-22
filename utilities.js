@@ -13,6 +13,10 @@ function toNumber (str) {
 }
 
 function isStringNumber (str) {
+  let num = Number(str)
+  let isNumber = typeof num === "number"
+  let isNotNan = !isNaN(num)
+  return isNumber && isNotNan
 }
 
 function add (a, b) {
@@ -39,5 +43,6 @@ function splitStringByCommas (str) {
 module.exports = {
   getType,
   isNumber,
-  toNumber
+  toNumber,
+  isStringNumber
 }
