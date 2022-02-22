@@ -9,6 +9,7 @@ function isNumber (thing) {
 }
 
 function toNumber (str) {
+  return Number(str)
 }
 
 function isStringNumber (str) {
@@ -37,5 +38,6 @@ function splitStringByCommas (str) {
 
 module.exports = {
   getType,
-  isNumber
+  isNumber,
+  toNumber
 }
