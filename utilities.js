@@ -5,6 +5,7 @@ function getType (thing) {
 }
 
 function isNumber (thing) {
+  return typeof thing === "number"
 }
 
 function toNumber (str) {
@@ -35,5 +36,6 @@ function splitStringByCommas (str) {
 }
 
 module.exports = {
-  getType
+  getType,
+  isNumber
 }
