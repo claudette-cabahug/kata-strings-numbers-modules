@@ -48,6 +48,13 @@ function isEmail (str) {
 }
 
 function countIf (array, fn) {
+  let count = 0
+  for (let item of array) {
+    if (fn(item)) {
+      count++
+    }
+  }  
+  return count
 }
 
 function filterStringsWithCommas (str) {
@@ -64,5 +71,6 @@ module.exports = {
   add,
   addStrings,
   addStringsOrNumbers,
-  isEmail
+  isEmail,
+  countIf
 }
